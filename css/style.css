@@ -1,0 +1,41 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 3em;
+    /* font-family: "Caveat", cursive; */
+    font-optical-sizing: auto;
+    font-weight: 2em;
+    font-style: normal;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    background-color: yellow;
+    padding: 1.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color ease 2s, border 2s;
+}
+
+/* element that has received focus*/
+a:focus {
+    outline: none;
+    border: 20px solid gray;
+}
+
+a:hover {
+    padding: 1.2em;
+    background-color: black;
+    color: white;
+    border: 10px solid yellow;
+}
+
+/*element that is being activated by the user*/
+a:active {
+    border: 2px solid blue;
+}
